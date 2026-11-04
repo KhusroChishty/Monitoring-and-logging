@@ -1,0 +1,32 @@
+datadog:
+  apiKey: "YOUR_DATADOG_API_KEY"
+  appKey: "YOUR_DATADOG_APP_KEY"
+  site: "datadoghq.com"
+
+agents:
+  enabled: true
+
+logs:
+  enabled: true
+
+networkMonitoring:
+  enabled: true
+
+apm:
+  enabled: true
+
+processAgent:
+  enabled: true
+
+clusterName: "example-cluster"
+
+dogstatsd:
+  useHostPort: true
+
+resources:
+  requests:
+    cpu: "200m"
+    memory: "256Mi"
+  limits:
+    cpu: "500m"
+    memory: "512Mi"
